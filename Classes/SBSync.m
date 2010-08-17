@@ -37,15 +37,15 @@
 -(void)sendChanges
 {
 	// do we have anything to send?
-	NSMutableArray *updates = nil;
-	NSMutableArray *deletes = nil;
-	NSError *err = [SBBookmark getBookmarksForServerUpdate:&updates];
+	NSMutableArray *theUpdates = nil;
+	NSMutableArray *theDeletes = nil;
+	NSError *err = [SBBookmark getBookmarksForServerUpdate:&theUpdates];
 	if(err != nil)
 	{
 		[self.callback syncFailed:err];
 		return;
 	}
-	err = [SBBookmark getBookmarksForServerDelete:&deletes];
+	err = [SBBookmark getBookmarksForServerDelete:&theDeletes];
 	if(err != nil)
 	{
 		[self.callback syncFailed:err];
@@ -53,15 +53,15 @@
 	}
 	
 	// do we have anything to do?
-	if(updates.count == 0 && deletes.count == 0)
+	if(theUpdates.count == 0 && theDeletes.count == 0)
 	{
 		[self getLatest];
 	}
 	else
 	{
 		// store the updates - we're going to come back async later...
-		self.updates = updates;
-		self.deletes = deletes;
+		self.updates = theUpdates;
+		self.deletes = theDeletes;
 		
 		// ok - we have to create a delta, get the server items...
 		self.mode = SBSMPushChanges;
@@ -229,7 +229,7 @@
 	// call the service...
 	SBBookmarksService *service = [[SBBookmarksService alloc] init];
 	if(item.mode == SBODOInsert)
-		[service pushInsert:item.entity callback:(SBODataFetchCallback *)self];
+		[service pushInsert:item.entity callback:(SBODataFetchCallback *)self];        
 	else if(item.mode == SBODOUpdate)
 		[service pushUpdate:item.entity serverId:item.serverId callback:(SBODataFetchCallback *)self];
 	else if(item.mode == SBODODelete)

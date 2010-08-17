@@ -47,14 +47,13 @@
 
 -(void)downloadComplete:(SBDownloadBucket *)bucket
 {
-	// did we fail - i.e. not 200 and not 204 (OK, but nothing to say)...
-	if(bucket.statusCode != 200 && bucket.statusCode != 204)
+	// did we fail - i.e. not 200 and not 204 (OK, but nothing to say), and not 201 (created)...
+	if(bucket.statusCode != 200 && bucket.statusCode != 204 && bucket.statusCode != 201)
 	{
 		// create an error...
 		NSString *message = [NSString stringWithFormat:@"An OData request returned HTTP status '%d'.", bucket.statusCode];
 		NSString *html = bucket.dataAsString;
 		NSLog(@"%@ --> %@", message, html);
-		[html release];
 		NSError *err = [SBErrorHelper error:self message:message];
 		
 		// flip back...
@@ -75,11 +74,11 @@
 -(void)handleFetchAllComplete:(SBDownloadBucket *)bucket
 {
 	// parse it...
-	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:[bucket data]] autorelease];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:[bucket data]];
 	[parser setShouldProcessNamespaces:TRUE];
 	
 	// new...
-	SBEntityXmlBucket *entities = [[[SBEntityXmlBucket alloc] initWithEntityType:[self entityType]] autorelease];
+	SBEntityXmlBucket *entities = [[SBEntityXmlBucket alloc] initWithEntityType:[self entityType]];
 	[parser setDelegate:entities];
 	[parser parse];
 	

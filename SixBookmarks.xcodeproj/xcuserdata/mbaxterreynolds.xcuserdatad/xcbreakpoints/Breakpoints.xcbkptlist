@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
    type = "1">
-   <FileBreakpoints>
-      <FileBreakpoint
+   <SymbolicBreakpoints>
+      <SymbolicBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Classes/SBSync.m"
-         timestampString = "303396329.997871"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "147"
-         endingLineNumber = "147"
-         landmarkName = "-odataFetchFailed:opCode:"
-         landmarkType = "5">
-      </FileBreakpoint>
-   </FileBreakpoints>
+         symbolName = "malloc_error_break"
+         moduleName = "">
+      </SymbolicBreakpoint>
+   </SymbolicBreakpoints>
 </Bucket>

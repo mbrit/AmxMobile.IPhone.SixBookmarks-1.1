@@ -79,7 +79,8 @@
 -(void)setupButton:(SBBookmark *)bookmark
 {
 	// get...
-	UIButton *button = [self getButton:[bookmark ordinal]];
+    int ordinal = [bookmark ordinal];
+	UIButton *button = [self getButton:ordinal];
 	[button setTitle:[bookmark name] forState:UIControlStateNormal];
 }
 
