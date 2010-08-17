@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5440314C1212F28300E9908E /* SBEntityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5440314B1212F28300E9908E /* SBEntityItem.m */; };
+		544031501212F30C00E9908E /* SBEntityField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5440314F1212F30C00E9908E /* SBEntityField.m */; };
+		544031551212F39F00E9908E /* SBEntityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 544031541212F39F00E9908E /* SBEntityType.m */; };
+		5440315C1212F55F00E9908E /* SBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5440315B1212F55F00E9908E /* SBEntity.m */; };
+		546E74F81211C3D900ECDF07 /* SBErrorBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E74F71211C3D900ECDF07 /* SBErrorBucket.m */; };
+		546E74FC1211C5C600ECDF07 /* SBMessageBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E74FB1211C5C600ECDF07 /* SBMessageBox.m */; };
+		546E75021211C73100ECDF07 /* SBServiceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E75011211C73100ECDF07 /* SBServiceProxy.m */; };
+		546E75051211C74000ECDF07 /* SBRestServiceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E75041211C74000ECDF07 /* SBRestServiceProxy.m */; };
+		546E75081211C74700ECDF07 /* SBApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E75071211C74700ECDF07 /* SBApiService.m */; };
+		546E750B1211C74D00ECDF07 /* SBUsersService.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E750A1211C74D00ECDF07 /* SBUsersService.m */; };
+		546E750F1211C82600ECDF07 /* SBHttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E750E1211C82600ECDF07 /* SBHttpHelper.m */; };
+		546E75121211C83500ECDF07 /* SBDownloadBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E75111211C83400ECDF07 /* SBDownloadBucket.m */; };
+		546E75151211C83C00ECDF07 /* SBDownloadSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 546E75141211C83C00ECDF07 /* SBDownloadSettings.m */; };
+		548983CC121563F500693C14 /* SBConfigureView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 548983CA121563F500693C14 /* SBConfigureView2.m */; };
+		548983CD121563F500693C14 /* SBConfigureView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548983CB121563F500693C14 /* SBConfigureView2.xib */; };
+		549704231212F7030014DF5C /* SBBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 549704221212F7030014DF5C /* SBBookmark.m */; };
+		5497042B1212F7EA0014DF5C /* SBRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497042A1212F7EA0014DF5C /* SBRuntime.m */; };
+		549704311212F8550014DF5C /* SBNavigatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497042F1212F8550014DF5C /* SBNavigatorView.m */; };
+		549704321212F8550014DF5C /* SBNavigatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549704301212F8550014DF5C /* SBNavigatorView.xib */; };
+		54970444121304690014DF5C /* SBODataServiceProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970443121304690014DF5C /* SBODataServiceProxy.m */; };
+		54970449121305850014DF5C /* SBBookmarksService.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970448121305850014DF5C /* SBBookmarksService.m */; };
+		5497044E121306E40014DF5C /* SBSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497044D121306E40014DF5C /* SBSync.m */; };
+		54970454121309F10014DF5C /* SBEntityXmlBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970453121309F10014DF5C /* SBEntityXmlBucket.m */; };
+		5497045A12130F8D0014DF5C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5497045912130F8D0014DF5C /* libsqlite3.dylib */; };
+		5497045E12130FED0014DF5C /* SBDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497045D12130FED0014DF5C /* SBDBHelper.m */; };
+		54970467121310EC0014DF5C /* SBSqlStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970466121310EC0014DF5C /* SBSqlStatement.m */; };
+		54970473121314A30014DF5C /* SBEntityChangeProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970472121314A30014DF5C /* SBEntityChangeProcessor.m */; };
+		5497047F121318810014DF5C /* SBSqlConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5497047E121318810014DF5C /* SBSqlConstraint.m */; };
+		54970482121318BC0014DF5C /* SBSqlFieldConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970481121318BC0014DF5C /* SBSqlFieldConstraint.m */; };
+		54970485121319100014DF5C /* SBSqlFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54970484121319100014DF5C /* SBSqlFilter.m */; };
+		54A804DB1211D4DA00983DED /* SBXmlBucketBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A804DA1211D4DA00983DED /* SBXmlBucketBase.m */; };
+		54A804DE1211D55100983DED /* SBFlatXmlBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A804DD1211D55100983DED /* SBFlatXmlBucket.m */; };
+		54A804E21211D5E900983DED /* SBRestRequestArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A804E11211D5E900983DED /* SBRestRequestArgs.m */; };
+		54A804E91211D74B00983DED /* SBErrorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A804E81211D74B00983DED /* SBErrorHelper.m */; };
+		54E0CFB41215679D00B61329 /* SBConfigureSingletonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0CFB21215679D00B61329 /* SBConfigureSingletonView.m */; };
+		54E0CFB51215679D00B61329 /* SBConfigureSingletonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0CFB31215679D00B61329 /* SBConfigureSingletonView.xib */; };
+		54F5252D1210A2ED000A3582 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F5252C1210A2ED000A3582 /* UIKit.framework */; };
+		54F5252F1210A2ED000A3582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F5252E1210A2ED000A3582 /* Foundation.framework */; };
+		54F525311210A2ED000A3582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F525301210A2ED000A3582 /* CoreGraphics.framework */; };
+		54F525361210A2ED000A3582 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F525341210A2ED000A3582 /* InfoPlist.strings */; };
+		54F525381210A2ED000A3582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F525371210A2ED000A3582 /* main.m */; };
+		54F5253B1210A2ED000A3582 /* SixBookmarksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F5253A1210A2ED000A3582 /* SixBookmarksAppDelegate.m */; };
+		54F5253E1210A2ED000A3582 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F5253C1210A2ED000A3582 /* MainWindow.xib */; };
+		54F525411210A2ED000A3582 /* SixBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F525401210A2ED000A3582 /* SixBookmarksViewController.m */; };
+		54F525441210A2ED000A3582 /* SixBookmarksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F525421210A2ED000A3582 /* SixBookmarksViewController.xib */; };
+		54F5254C1210A357000A3582 /* SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F5254B1210A357000A3582 /* SBViewController.m */; };
+		54F525501210A3D1000A3582 /* SBLogonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F5254E1210A3D1000A3582 /* SBLogonView.m */; };
+		54F525511210A3D1000A3582 /* SBLogonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F5254F1210A3D1000A3582 /* SBLogonView.xib */; };
+		54FCC26712156FFD0093961F /* SBSyncWorkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FCC26612156FFD0093961F /* SBSyncWorkItem.m */; };
+		54FCC26C121571CA0093961F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FCC26B121571CA0093961F /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5440314A1212F28300E9908E /* SBEntityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityItem.h; sourceTree = "<group>"; };
+		5440314B1212F28300E9908E /* SBEntityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntityItem.m; sourceTree = "<group>"; };
+		5440314D1212F2F300E9908E /* SBDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDataType.h; sourceTree = "<group>"; };
+		5440314E1212F30C00E9908E /* SBEntityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityField.h; sourceTree = "<group>"; };
+		5440314F1212F30C00E9908E /* SBEntityField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntityField.m; sourceTree = "<group>"; };
+		544031531212F39F00E9908E /* SBEntityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityType.h; sourceTree = "<group>"; };
+		544031541212F39F00E9908E /* SBEntityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntityType.m; sourceTree = "<group>"; };
+		544031581212F53000E9908E /* SBEntityFieldFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityFieldFlags.h; sourceTree = "<group>"; };
+		544031591212F54400E9908E /* SBEntitySetReason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntitySetReason.h; sourceTree = "<group>"; };
+		5440315A1212F55F00E9908E /* SBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntity.h; sourceTree = "<group>"; };
+		5440315B1212F55F00E9908E /* SBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntity.m; sourceTree = "<group>"; };
+		546E74F61211C3D900ECDF07 /* SBErrorBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBErrorBucket.h; sourceTree = "<group>"; };
+		546E74F71211C3D900ECDF07 /* SBErrorBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBErrorBucket.m; sourceTree = "<group>"; };
+		546E74FA1211C5C600ECDF07 /* SBMessageBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMessageBox.h; sourceTree = "<group>"; };
+		546E74FB1211C5C600ECDF07 /* SBMessageBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMessageBox.m; sourceTree = "<group>"; };
+		546E75001211C73100ECDF07 /* SBServiceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBServiceProxy.h; sourceTree = "<group>"; };
+		546E75011211C73100ECDF07 /* SBServiceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBServiceProxy.m; sourceTree = "<group>"; };
+		546E75031211C74000ECDF07 /* SBRestServiceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRestServiceProxy.h; sourceTree = "<group>"; };
+		546E75041211C74000ECDF07 /* SBRestServiceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRestServiceProxy.m; sourceTree = "<group>"; };
+		546E75061211C74700ECDF07 /* SBApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBApiService.h; sourceTree = "<group>"; };
+		546E75071211C74700ECDF07 /* SBApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBApiService.m; sourceTree = "<group>"; };
+		546E75091211C74D00ECDF07 /* SBUsersService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUsersService.h; sourceTree = "<group>"; };
+		546E750A1211C74D00ECDF07 /* SBUsersService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUsersService.m; sourceTree = "<group>"; };
+		546E750D1211C82600ECDF07 /* SBHttpHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBHttpHelper.h; sourceTree = "<group>"; };
+		546E750E1211C82600ECDF07 /* SBHttpHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBHttpHelper.m; sourceTree = "<group>"; };
+		546E75101211C83400ECDF07 /* SBDownloadBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDownloadBucket.h; sourceTree = "<group>"; };
+		546E75111211C83400ECDF07 /* SBDownloadBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDownloadBucket.m; sourceTree = "<group>"; };
+		546E75131211C83C00ECDF07 /* SBDownloadSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDownloadSettings.h; sourceTree = "<group>"; };
+		546E75141211C83C00ECDF07 /* SBDownloadSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDownloadSettings.m; sourceTree = "<group>"; };
+		548983C9121563F500693C14 /* SBConfigureView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBConfigureView2.h; sourceTree = SOURCE_ROOT; };
+		548983CA121563F500693C14 /* SBConfigureView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBConfigureView2.m; sourceTree = SOURCE_ROOT; };
+		548983CB121563F500693C14 /* SBConfigureView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBConfigureView2.xib; sourceTree = SOURCE_ROOT; };
+		549704211212F7030014DF5C /* SBBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookmark.h; sourceTree = "<group>"; };
+		549704221212F7030014DF5C /* SBBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookmark.m; sourceTree = "<group>"; };
+		549704291212F7EA0014DF5C /* SBRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRuntime.h; sourceTree = "<group>"; };
+		5497042A1212F7EA0014DF5C /* SBRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRuntime.m; sourceTree = "<group>"; };
+		5497042E1212F8550014DF5C /* SBNavigatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBNavigatorView.h; path = ../SBNavigatorView.h; sourceTree = "<group>"; };
+		5497042F1212F8550014DF5C /* SBNavigatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBNavigatorView.m; path = ../SBNavigatorView.m; sourceTree = "<group>"; };
+		549704301212F8550014DF5C /* SBNavigatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBNavigatorView.xib; sourceTree = "<group>"; };
+		54970442121304690014DF5C /* SBODataServiceProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBODataServiceProxy.h; sourceTree = "<group>"; };
+		54970443121304690014DF5C /* SBODataServiceProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBODataServiceProxy.m; sourceTree = "<group>"; };
+		54970447121305850014DF5C /* SBBookmarksService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookmarksService.h; sourceTree = "<group>"; };
+		54970448121305850014DF5C /* SBBookmarksService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookmarksService.m; sourceTree = "<group>"; };
+		5497044C121306E40014DF5C /* SBSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSync.h; sourceTree = "<group>"; };
+		5497044D121306E40014DF5C /* SBSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSync.m; sourceTree = "<group>"; };
+		54970452121309F10014DF5C /* SBEntityXmlBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityXmlBucket.h; sourceTree = "<group>"; };
+		54970453121309F10014DF5C /* SBEntityXmlBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntityXmlBucket.m; sourceTree = "<group>"; };
+		5497045912130F8D0014DF5C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = Xcode4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5497045C12130FED0014DF5C /* SBDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDBHelper.h; sourceTree = "<group>"; };
+		5497045D12130FED0014DF5C /* SBDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDBHelper.m; sourceTree = "<group>"; };
+		54970465121310EC0014DF5C /* SBSqlStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSqlStatement.h; sourceTree = "<group>"; };
+		54970466121310EC0014DF5C /* SBSqlStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSqlStatement.m; sourceTree = "<group>"; };
+		54970471121314A30014DF5C /* SBEntityChangeProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBEntityChangeProcessor.h; sourceTree = "<group>"; };
+		54970472121314A30014DF5C /* SBEntityChangeProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBEntityChangeProcessor.m; sourceTree = "<group>"; };
+		5497047D121318810014DF5C /* SBSqlConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSqlConstraint.h; sourceTree = "<group>"; };
+		5497047E121318810014DF5C /* SBSqlConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSqlConstraint.m; sourceTree = "<group>"; };
+		54970480121318BC0014DF5C /* SBSqlFieldConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSqlFieldConstraint.h; sourceTree = "<group>"; };
+		54970481121318BC0014DF5C /* SBSqlFieldConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSqlFieldConstraint.m; sourceTree = "<group>"; };
+		54970483121319100014DF5C /* SBSqlFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSqlFilter.h; sourceTree = "<group>"; };
+		54970484121319100014DF5C /* SBSqlFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSqlFilter.m; sourceTree = "<group>"; };
+		54A804D91211D4DA00983DED /* SBXmlBucketBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBXmlBucketBase.h; sourceTree = "<group>"; };
+		54A804DA1211D4DA00983DED /* SBXmlBucketBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBXmlBucketBase.m; sourceTree = "<group>"; };
+		54A804DC1211D55100983DED /* SBFlatXmlBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBFlatXmlBucket.h; sourceTree = "<group>"; };
+		54A804DD1211D55100983DED /* SBFlatXmlBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBFlatXmlBucket.m; sourceTree = "<group>"; };
+		54A804E01211D5E900983DED /* SBRestRequestArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRestRequestArgs.h; sourceTree = "<group>"; };
+		54A804E11211D5E900983DED /* SBRestRequestArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRestRequestArgs.m; sourceTree = "<group>"; };
+		54A804E71211D74B00983DED /* SBErrorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBErrorHelper.h; sourceTree = "<group>"; };
+		54A804E81211D74B00983DED /* SBErrorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBErrorHelper.m; sourceTree = "<group>"; };
+		54E0CFB11215679D00B61329 /* SBConfigureSingletonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBConfigureSingletonView.h; sourceTree = SOURCE_ROOT; };
+		54E0CFB21215679D00B61329 /* SBConfigureSingletonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBConfigureSingletonView.m; sourceTree = SOURCE_ROOT; };
+		54E0CFB31215679D00B61329 /* SBConfigureSingletonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBConfigureSingletonView.xib; sourceTree = SOURCE_ROOT; };
+		54F525291210A2ED000A3582 /* SixBookmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixBookmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F5252C1210A2ED000A3582 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54F5252E1210A2ED000A3582 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54F525301210A2ED000A3582 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54F525321210A2ED000A3582 /* SixBookmarks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SixBookmarks-Info.plist"; sourceTree = "<group>"; };
+		54F525331210A2ED000A3582 /* SixBookmarks_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixBookmarks_Prefix.pch; sourceTree = "<group>"; };
+		54F525351210A2ED000A3582 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F525371210A2ED000A3582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54F525391210A2ED000A3582 /* SixBookmarksAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixBookmarksAppDelegate.h; sourceTree = "<group>"; };
+		54F5253A1210A2ED000A3582 /* SixBookmarksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixBookmarksAppDelegate.m; sourceTree = "<group>"; };
+		54F5253D1210A2ED000A3582 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		54F5253F1210A2ED000A3582 /* SixBookmarksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixBookmarksViewController.h; sourceTree = "<group>"; };
+		54F525401210A2ED000A3582 /* SixBookmarksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixBookmarksViewController.m; sourceTree = "<group>"; };
+		54F525431210A2ED000A3582 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SixBookmarksViewController.xib; sourceTree = "<group>"; };
+		54F5254A1210A357000A3582 /* SBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBViewController.h; path = ../SBViewController.h; sourceTree = "<group>"; };
+		54F5254B1210A357000A3582 /* SBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBViewController.m; path = ../SBViewController.m; sourceTree = "<group>"; };
+		54F5254D1210A3D1000A3582 /* SBLogonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBLogonView.h; path = ../SBLogonView.h; sourceTree = "<group>"; };
+		54F5254E1210A3D1000A3582 /* SBLogonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBLogonView.m; path = ../SBLogonView.m; sourceTree = "<group>"; };
+		54F5254F1210A3D1000A3582 /* SBLogonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBLogonView.xib; sourceTree = "<group>"; };
+		54F525521210A737000A3582 /* MyClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyClasses.h; path = ../MyClasses.h; sourceTree = "<group>"; };
+		54FCC26512156FFD0093961F /* SBSyncWorkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSyncWorkItem.h; sourceTree = "<group>"; };
+		54FCC26612156FFD0093961F /* SBSyncWorkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSyncWorkItem.m; sourceTree = "<group>"; };
+		54FCC26B121571CA0093961F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F525261210A2ED000A3582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F5252D1210A2ED000A3582 /* UIKit.framework in Frameworks */,
+				54F5252F1210A2ED000A3582 /* Foundation.framework in Frameworks */,
+				54F525311210A2ED000A3582 /* CoreGraphics.framework in Frameworks */,
+				5497045A12130F8D0014DF5C /* libsqlite3.dylib in Frameworks */,
+				54FCC26C121571CA0093961F /* libxml2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544031491212F27800E9908E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				54970471121314A30014DF5C /* SBEntityChangeProcessor.h */,
+				54970472121314A30014DF5C /* SBEntityChangeProcessor.m */,
+				549704211212F7030014DF5C /* SBBookmark.h */,
+				549704221212F7030014DF5C /* SBBookmark.m */,
+				5440315A1212F55F00E9908E /* SBEntity.h */,
+				5440315B1212F55F00E9908E /* SBEntity.m */,
+				544031591212F54400E9908E /* SBEntitySetReason.h */,
+				544031581212F53000E9908E /* SBEntityFieldFlags.h */,
+				544031531212F39F00E9908E /* SBEntityType.h */,
+				544031541212F39F00E9908E /* SBEntityType.m */,
+				5440314E1212F30C00E9908E /* SBEntityField.h */,
+				5440314F1212F30C00E9908E /* SBEntityField.m */,
+				5440314D1212F2F300E9908E /* SBDataType.h */,
+				5440314A1212F28300E9908E /* SBEntityItem.h */,
+				5440314B1212F28300E9908E /* SBEntityItem.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		546E74F51211C3C000ECDF07 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				54FCC26512156FFD0093961F /* SBSyncWorkItem.h */,
+				54FCC26612156FFD0093961F /* SBSyncWorkItem.m */,
+				54970452121309F10014DF5C /* SBEntityXmlBucket.h */,
+				54970453121309F10014DF5C /* SBEntityXmlBucket.m */,
+				5497044C121306E40014DF5C /* SBSync.h */,
+				5497044D121306E40014DF5C /* SBSync.m */,
+				549704291212F7EA0014DF5C /* SBRuntime.h */,
+				5497042A1212F7EA0014DF5C /* SBRuntime.m */,
+				54A804E71211D74B00983DED /* SBErrorHelper.h */,
+				54A804E81211D74B00983DED /* SBErrorHelper.m */,
+				54A804E01211D5E900983DED /* SBRestRequestArgs.h */,
+				54A804E11211D5E900983DED /* SBRestRequestArgs.m */,
+				54A804DC1211D55100983DED /* SBFlatXmlBucket.h */,
+				54A804DD1211D55100983DED /* SBFlatXmlBucket.m */,
+				54A804D91211D4DA00983DED /* SBXmlBucketBase.h */,
+				54A804DA1211D4DA00983DED /* SBXmlBucketBase.m */,
+				546E75131211C83C00ECDF07 /* SBDownloadSettings.h */,
+				546E75141211C83C00ECDF07 /* SBDownloadSettings.m */,
+				546E75101211C83400ECDF07 /* SBDownloadBucket.h */,
+				546E75111211C83400ECDF07 /* SBDownloadBucket.m */,
+				546E750D1211C82600ECDF07 /* SBHttpHelper.h */,
+				546E750E1211C82600ECDF07 /* SBHttpHelper.m */,
+				546E74FA1211C5C600ECDF07 /* SBMessageBox.h */,
+				546E74FB1211C5C600ECDF07 /* SBMessageBox.m */,
+				546E74F61211C3D900ECDF07 /* SBErrorBucket.h */,
+				546E74F71211C3D900ECDF07 /* SBErrorBucket.m */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		546E74FF1211C72700ECDF07 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				54970447121305850014DF5C /* SBBookmarksService.h */,
+				54970448121305850014DF5C /* SBBookmarksService.m */,
+				54970442121304690014DF5C /* SBODataServiceProxy.h */,
+				54970443121304690014DF5C /* SBODataServiceProxy.m */,
+				546E75091211C74D00ECDF07 /* SBUsersService.h */,
+				546E750A1211C74D00ECDF07 /* SBUsersService.m */,
+				546E75061211C74700ECDF07 /* SBApiService.h */,
+				546E75071211C74700ECDF07 /* SBApiService.m */,
+				546E75031211C74000ECDF07 /* SBRestServiceProxy.h */,
+				546E75041211C74000ECDF07 /* SBRestServiceProxy.m */,
+				546E75001211C73100ECDF07 /* SBServiceProxy.h */,
+				546E75011211C73100ECDF07 /* SBServiceProxy.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		54970464121310DD0014DF5C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				54970483121319100014DF5C /* SBSqlFilter.h */,
+				54970484121319100014DF5C /* SBSqlFilter.m */,
+				54970480121318BC0014DF5C /* SBSqlFieldConstraint.h */,
+				54970481121318BC0014DF5C /* SBSqlFieldConstraint.m */,
+				5497047D121318810014DF5C /* SBSqlConstraint.h */,
+				5497047E121318810014DF5C /* SBSqlConstraint.m */,
+				5497045C12130FED0014DF5C /* SBDBHelper.h */,
+				5497045D12130FED0014DF5C /* SBDBHelper.m */,
+				54970465121310EC0014DF5C /* SBSqlStatement.h */,
+				54970466121310EC0014DF5C /* SBSqlStatement.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		54F5251A1210A2ED000A3582 = {
+			isa = PBXGroup;
+			children = (
+				54FCC26B121571CA0093961F /* libxml2.dylib */,
+				54F525211210A2ED000A3582 /* Classes */,
+				54F525221210A2ED000A3582 /* Other Sources */,
+				54F525231210A2ED000A3582 /* Resources */,
+				54F525241210A2ED000A3582 /* Frameworks */,
+				54F5252A1210A2ED000A3582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54F525211210A2ED000A3582 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54E0CFB11215679D00B61329 /* SBConfigureSingletonView.h */,
+				54E0CFB21215679D00B61329 /* SBConfigureSingletonView.m */,
+				54E0CFB31215679D00B61329 /* SBConfigureSingletonView.xib */,
+				548983C9121563F500693C14 /* SBConfigureView2.h */,
+				548983CA121563F500693C14 /* SBConfigureView2.m */,
+				548983CB121563F500693C14 /* SBConfigureView2.xib */,
+				54970464121310DD0014DF5C /* Database */,
+				546E74FF1211C72700ECDF07 /* Services */,
+				544031491212F27800E9908E /* Entities */,
+				546E74F51211C3C000ECDF07 /* Runtime */,
+				54F5254D1210A3D1000A3582 /* SBLogonView.h */,
+				54F5254E1210A3D1000A3582 /* SBLogonView.m */,
+				5497042E1212F8550014DF5C /* SBNavigatorView.h */,
+				5497042F1212F8550014DF5C /* SBNavigatorView.m */,
+				54F5254A1210A357000A3582 /* SBViewController.h */,
+				54F5254B1210A357000A3582 /* SBViewController.m */,
+				54F525391210A2ED000A3582 /* SixBookmarksAppDelegate.h */,
+				54F5253A1210A2ED000A3582 /* SixBookmarksAppDelegate.m */,
+				54F5253F1210A2ED000A3582 /* SixBookmarksViewController.h */,
+				54F525401210A2ED000A3582 /* SixBookmarksViewController.m */,
+				54F525521210A737000A3582 /* MyClasses.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		54F525221210A2ED000A3582 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				54F525331210A2ED000A3582 /* SixBookmarks_Prefix.pch */,
+				54F525371210A2ED000A3582 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		54F525231210A2ED000A3582 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54F5254F1210A3D1000A3582 /* SBLogonView.xib */,
+				549704301212F8550014DF5C /* SBNavigatorView.xib */,
+				54F525321210A2ED000A3582 /* SixBookmarks-Info.plist */,
+				54F525341210A2ED000A3582 /* InfoPlist.strings */,
+				54F5253C1210A2ED000A3582 /* MainWindow.xib */,
+				54F525421210A2ED000A3582 /* SixBookmarksViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		54F525241210A2ED000A3582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5497045912130F8D0014DF5C /* libsqlite3.dylib */,
+				54F5252C1210A2ED000A3582 /* UIKit.framework */,
+				54F5252E1210A2ED000A3582 /* Foundation.framework */,
+				54F525301210A2ED000A3582 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54F5252A1210A2ED000A3582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F525291210A2ED000A3582 /* SixBookmarks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54F525281210A2ED000A3582 /* SixBookmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F525471210A2ED000A3582 /* Build configuration list for PBXNativeTarget "SixBookmarks" */;
+			buildPhases = (
+				54F525251210A2ED000A3582 /* Sources */,
+				54F525261210A2ED000A3582 /* Frameworks */,
+				54F525271210A2ED000A3582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixBookmarks;
+			productName = SixBookmarks;
+			productReference = 54F525291210A2ED000A3582 /* SixBookmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F5251C1210A2ED000A3582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "AMX Software Ltd";
+			};
+			buildConfigurationList = 54F5251F1210A2ED000A3582 /* Build configuration list for PBXProject "SixBookmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54F5251A1210A2ED000A3582;
+			productRefGroup = 54F5252A1210A2ED000A3582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F525281210A2ED000A3582 /* SixBookmarks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F525271210A2ED000A3582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F525361210A2ED000A3582 /* InfoPlist.strings in Resources */,
+				54F5253E1210A2ED000A3582 /* MainWindow.xib in Resources */,
+				54F525441210A2ED000A3582 /* SixBookmarksViewController.xib in Resources */,
+				54F525511210A3D1000A3582 /* SBLogonView.xib in Resources */,
+				549704321212F8550014DF5C /* SBNavigatorView.xib in Resources */,
+				548983CD121563F500693C14 /* SBConfigureView2.xib in Resources */,
+				54E0CFB51215679D00B61329 /* SBConfigureSingletonView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F525251210A2ED000A3582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F525381210A2ED000A3582 /* main.m in Sources */,
+				54F5253B1210A2ED000A3582 /* SixBookmarksAppDelegate.m in Sources */,
+				54F525411210A2ED000A3582 /* SixBookmarksViewController.m in Sources */,
+				54F5254C1210A357000A3582 /* SBViewController.m in Sources */,
+				54F525501210A3D1000A3582 /* SBLogonView.m in Sources */,
+				546E74F81211C3D900ECDF07 /* SBErrorBucket.m in Sources */,
+				546E74FC1211C5C600ECDF07 /* SBMessageBox.m in Sources */,
+				546E75021211C73100ECDF07 /* SBServiceProxy.m in Sources */,
+				546E75051211C74000ECDF07 /* SBRestServiceProxy.m in Sources */,
+				546E75081211C74700ECDF07 /* SBApiService.m in Sources */,
+				546E750B1211C74D00ECDF07 /* SBUsersService.m in Sources */,
+				546E750F1211C82600ECDF07 /* SBHttpHelper.m in Sources */,
+				546E75121211C83500ECDF07 /* SBDownloadBucket.m in Sources */,
+				546E75151211C83C00ECDF07 /* SBDownloadSettings.m in Sources */,
+				54A804DB1211D4DA00983DED /* SBXmlBucketBase.m in Sources */,
+				54A804DE1211D55100983DED /* SBFlatXmlBucket.m in Sources */,
+				54A804E21211D5E900983DED /* SBRestRequestArgs.m in Sources */,
+				54A804E91211D74B00983DED /* SBErrorHelper.m in Sources */,
+				5440314C1212F28300E9908E /* SBEntityItem.m in Sources */,
+				544031501212F30C00E9908E /* SBEntityField.m in Sources */,
+				544031551212F39F00E9908E /* SBEntityType.m in Sources */,
+				5440315C1212F55F00E9908E /* SBEntity.m in Sources */,
+				549704231212F7030014DF5C /* SBBookmark.m in Sources */,
+				5497042B1212F7EA0014DF5C /* SBRuntime.m in Sources */,
+				549704311212F8550014DF5C /* SBNavigatorView.m in Sources */,
+				54970444121304690014DF5C /* SBODataServiceProxy.m in Sources */,
+				54970449121305850014DF5C /* SBBookmarksService.m in Sources */,
+				5497044E121306E40014DF5C /* SBSync.m in Sources */,
+				54970454121309F10014DF5C /* SBEntityXmlBucket.m in Sources */,
+				5497045E12130FED0014DF5C /* SBDBHelper.m in Sources */,
+				54970467121310EC0014DF5C /* SBSqlStatement.m in Sources */,
+				54970473121314A30014DF5C /* SBEntityChangeProcessor.m in Sources */,
+				5497047F121318810014DF5C /* SBSqlConstraint.m in Sources */,
+				54970482121318BC0014DF5C /* SBSqlFieldConstraint.m in Sources */,
+				54970485121319100014DF5C /* SBSqlFilter.m in Sources */,
+				548983CC121563F500693C14 /* SBConfigureView2.m in Sources */,
+				54E0CFB41215679D00B61329 /* SBConfigureSingletonView.m in Sources */,
+				54FCC26712156FFD0093961F /* SBSyncWorkItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54F525341210A2ED000A3582 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F525351210A2ED000A3582 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54F5253C1210A2ED000A3582 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F5253D1210A2ED000A3582 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		54F525421210A2ED000A3582 /* SixBookmarksViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F525431210A2ED000A3582 /* en */,
+			);
+			name = SixBookmarksViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54F525451210A2ED000A3582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		54F525461210A2ED000A3582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		54F525481210A2ED000A3582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SixBookmarks_Prefix.pch;
+				INFOPLIST_FILE = "SixBookmarks-Info.plist";
+				PRODUCT_NAME = SixBookmarks;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54F525491210A2ED000A3582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SixBookmarks_Prefix.pch;
+				INFOPLIST_FILE = "SixBookmarks-Info.plist";
+				PRODUCT_NAME = SixBookmarks;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F5251F1210A2ED000A3582 /* Build configuration list for PBXProject "SixBookmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F525451210A2ED000A3582 /* Debug */,
+				54F525461210A2ED000A3582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F525471210A2ED000A3582 /* Build configuration list for PBXNativeTarget "SixBookmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F525481210A2ED000A3582 /* Debug */,
+				54F525491210A2ED000A3582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F5251C1210A2ED000A3582 /* Project object */;
+}
